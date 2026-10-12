@@ -1,0 +1,45 @@
+# 站点部署后的真实地址（末尾要带 /）
+baseURL = 'https://huskar-silencer.github.io/HserSiPapers/'
+title = "Huskar-Silencer's paper"
+languageCode = 'en-us'
+defaultContentLanguage = 'en'
+theme = 'paper'
+
+# 首页每页显示的文章数量
+[pagination]
+  pagerSize = 8
+
+[params]
+  # linen / wheat / gray / light
+  color = 'linen'
+
+  name = 'Huskar-Silencer'
+  bio = 'Notes on learning and life'
+
+  github = 'Huskar-Silencer'
+  rss = true
+
+  disableHLJS = false
+  disablePostNavigation = false
+  monoDarkIcon = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+
+[menu]
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'contact'
+    name = 'Contact'
+    url = '/contact/'
+    weight = 20
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
