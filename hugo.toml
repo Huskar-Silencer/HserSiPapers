@@ -1,7 +1,7 @@
 # 站点部署后的真实地址（末尾要带 /）
 baseURL = 'https://huskar-silencer.github.io/HserSiPapers/'
 title = "Huskar-Silencer's paper"
-languageCode = 'en-us'
+locale = 'en-us'
 defaultContentLanguage = 'en'
 theme = 'paper'
 
