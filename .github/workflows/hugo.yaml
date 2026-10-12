@@ -47,6 +47,9 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+        with:
+          # 自动为仓库启用 Pages（否则新仓库首次运行会报 "Get Pages site failed"）
+          enablement: true
 
       - name: Build with Hugo
         env:
